@@ -10,7 +10,7 @@ if(preg_match('/haldigitalcollections/',$_SERVER['HTTP_HOST'])) {
   exit();
 }
 
-define("SEEKING_MICHIGAN_HOST","http://seekingmichigan.org");
+define("SEEKING_MICHIGAN_HOST","http://dnr.seekingmichigan.org");
 
 include('vendor/framework/lib/application.php');
 $SM_APP = new Application;

@@ -7,15 +7,15 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
 <head>
   <title><?= $title ?></title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link rel="stylesheet" href="<?= SEEKING_MICHIGAN_HOST ?>/css/screen/main.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="<?= SEEKING_MICHIGAN_HOST ?>/stylesheets/screen/main.css" type="text/css" media="screen, projection" />
   <!--[if IE]>
-  <link rel="stylesheet" href="<?= SEEKING_MICHIGAN_HOST ?>/css/screen/patches/win-ie-all.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="<?= SEEKING_MICHIGAN_HOST ?>/stylesheets/screen/patches/win-ie-all.css" type="text/css" media="screen, projection" />
   <![endif]-->
   <!--[if IE 7]>
-  <link rel="stylesheet" href="<?= SEEKING_MICHIGAN_HOST ?>/css/screen/patches/win-ie7.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="<?= SEEKING_MICHIGAN_HOST ?>/stylesheets/screen/patches/win-ie7.css" type="text/css" media="screen, projection" />
   <![endif]-->
   <!--[if lt IE 7]>
-  <link rel="stylesheet" href="<?= SEEKING_MICHIGAN_HOST ?>/css/screen/patches/win-ie-old.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="<?= SEEKING_MICHIGAN_HOST ?>/stylesheets/screen/patches/win-ie-old.css" type="text/css" media="screen, projection" />
   <script type="text/javascript" src="<?= SEEKING_MICHIGAN_HOST ?>/js/lib/dd-png.js"></script>
   <![endif]-->
   <? foreach($css_includes as $css): ?>
@@ -25,8 +25,8 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
       <link rel="stylesheet" href="<?= SEEKING_MICHIGAN_HOST ?>/css/<?= $css ?>.css" type="text/css" media="screen, projection" />
     <? endif; ?>
   <? endforeach; ?>
-  <script type="text/javascript" src="<?= SEEKING_MICHIGAN_HOST ?>/js/core.js"></script>
-  <script type="text/javascript" src="<?= SEEKING_MICHIGAN_HOST ?>/js/jquery.min.js"></script>
+  <script type="text/javascript" src="<?= SEEKING_MICHIGAN_HOST ?>/javascripts/core.js"></script>
+  <script type="text/javascript" src="<?= SEEKING_MICHIGAN_HOST ?>/javascripts/jquery.min.js"></script>
   <? foreach($js_includes as $js): ?>
     <? if(preg_match('/^http:\/\//',$js) > 0): ?>
       <script type="text/javascript" src="<?= $js ?>"></script>
@@ -52,16 +52,16 @@ $breadcrumbs = isset($breadcrumbs) ? $breadcrumbs : array('Home' => '');
     </script>
   <? endif; ?>
 </head>
-<body id="www.seekingmichigan.com" class="<?= $body_class; ?>">
+<body id="www-governingmichigan-gov" class="<?= $body_class; ?>">
   <div class="wrapper">
     <div id="header">
       <div class="wrapper">
-        <h1><a href="<?= SEEKING_MICHIGAN_HOST ?>"><img src="<?= SEEKING_MICHIGAN_HOST ?>/images/seeking-logo.gif" width="309" height="41" alt="Seeking Michigan Logo" /><span>Seeking Michigan</span></a></h1>
+        <h1><a href="/"><span>Governing Michigan</span></a></h1> 
         <ul id="nav">
           <li id="nav-seek"><a href="seek_advanced.php"> Seek</a></li>
-          <li id="nav-discover"><a href="<?= SEEKING_MICHIGAN_HOST ?>/discover"> Discover</a></li>
+          <!-- <li id="nav-discover"><a href="<?= SEEKING_MICHIGAN_HOST ?>/discover"> Discover</a></li>
           <li id="nav-look"><a href="<?= SEEKING_MICHIGAN_HOST ?>/look"> Look</a></li>
-          <li id="nav-teach"><a href="<?= SEEKING_MICHIGAN_HOST ?>/teach"> Teach</a></li>
+          <li id="nav-teach"><a href="<?= SEEKING_MICHIGAN_HOST ?>/teach"> Teach</a> --></li>
         </ul>
       </div>
     </div>
